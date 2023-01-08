@@ -1,0 +1,16 @@
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.buttonRed{
+  background: #E50914;
+  padding: 7px 17px;
+  margin-left: 12px;
+  color: #FFFFFF;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 400;
+}

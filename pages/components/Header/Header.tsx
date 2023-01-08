@@ -8,7 +8,7 @@ const Header = () => {
             <div className={styles.logo}>
                 <Image src="/logo.svg" alt="Netflix logo" width={108} height={32}/>
             </div>
-            <div className={styles.buttons}>
+            <div className={styles.buttonContainer}>
                 <Button>
                     English
                 </Button>
