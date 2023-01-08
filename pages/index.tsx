@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 
@@ -14,9 +16,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+          <Header/>
         <h1>Hello</h1>
-
+          <Footer/>
       </main>
+
     </>
   )
 }
