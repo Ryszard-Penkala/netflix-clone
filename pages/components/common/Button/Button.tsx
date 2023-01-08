@@ -1,12 +1,13 @@
 import styles from "./Button.module.scss"
 
 type Props = {
-    children: string
+    children: string,
+    type: 'buttonRed',
 }
 
-const Button = ({ children }: Props) =>{
+const Button = ({ children, type }: Props) =>{
     return(
-        <button className={styles.buttonRed}>
+        <button className={styles[type]}>
             {children}
         </button>
     )

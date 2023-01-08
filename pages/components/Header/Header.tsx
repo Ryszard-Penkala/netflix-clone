@@ -9,10 +9,16 @@ const Header = () => {
                 <Image src="/logo.svg" alt="Netflix logo" width={108} height={32}/>
             </div>
             <div className={styles.buttonContainer}>
-                <Button>
-                    English
-                </Button>
-                <Button>
+                <div className={styles.langPicker}>
+                    <label htmlFor="langSwitcher" className={styles.langPickerLabel}>
+                        <span className={styles.langSwitcherText}>Wybierz język</span>
+                    </label>
+                    <select name="langSwitcher" className={styles.langPickerSelect}>
+                        <option value="polish">Polski</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
+                <Button type="buttonRed">
                     Signup
                 </Button>
             </div>
