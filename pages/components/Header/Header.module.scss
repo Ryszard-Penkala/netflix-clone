@@ -1,3 +1,7 @@
 .headerSection{
+  display: flex;
+  flex-direction: row;
   background: red;
+  justify-content: space-between;
+  padding: 28px 45px 0 45px;
 }
