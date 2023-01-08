@@ -5,8 +5,16 @@ import Button from "../common/Button/Button";
 const Header = () => {
     return(
         <header className={styles.headerSection}>
-            <div className={styles.logo}>
-                <Image src="/logo.svg" alt="Netflix logo" width={108} height={32}/>
+            <div className={styles.logoContainer}>
+                <Image
+                    src="/logo.svg"
+                    alt="Netflix logo"
+                    layout="fill"
+                    className={styles.logo}
+                    // // layout="responsive"
+                    // width={108}
+                    // height={32}
+                />
             </div>
             <div className={styles.buttonContainer}>
                 <div className={styles.langPicker}>
