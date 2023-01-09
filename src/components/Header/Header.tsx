@@ -1,6 +1,7 @@
 import styles from "./Header.module.scss"
 import Image from 'next/image'
 import Button from "../common/Button/Button";
+import LangPicker from "../common/LangPicker/LangPicker";
 
 const Header = () => {
     return(
@@ -15,13 +16,7 @@ const Header = () => {
             </div>
             <div className={styles.buttonContainer}>
                 <div className={styles.langPicker}>
-                    <label htmlFor="langSwitcher" className={styles.langPickerLabel}>
-                        <span className={styles.langSwitcherText}>Wybierz język</span>
-                    </label>
-                    <select name="langSwitcher" className={styles.langPickerSelect}>
-                        <option value="polish">Polski</option>
-                        <option value="english">English</option>
-                    </select>
+                    <LangPicker />
                 </div>
                 <Button type="buttonRed">
                     Sign In
