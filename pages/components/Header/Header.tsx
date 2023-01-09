@@ -11,9 +11,6 @@ const Header = () => {
                     alt="Netflix logo"
                     layout="fill"
                     className={styles.logo}
-                    // // layout="responsive"
-                    // width={108}
-                    // height={32}
                 />
             </div>
             <div className={styles.buttonContainer}>
@@ -27,7 +24,7 @@ const Header = () => {
                     </select>
                 </div>
                 <Button type="buttonRed">
-                    Signup
+                    Sign In
                 </Button>
             </div>
         </header>
