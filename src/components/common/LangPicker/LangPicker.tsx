@@ -2,7 +2,7 @@ import styles from "./LangPicker.module.scss";
 
 const LangPicker = () => {
     return(
-        <>
+        <div className={styles.langPicker}>
             <label htmlFor="langSwitcher" className={styles.langPickerLabel}>
                 <span className={styles.langSwitcherText}>Wybierz język</span>
             </label>
@@ -10,7 +10,7 @@ const LangPicker = () => {
                 <option value="polish">Polski</option>
                 <option value="english">English</option>
             </select>
-        </>
+        </div>
     )
 }
 

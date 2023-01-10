@@ -1,3 +1,14 @@
-.footerSection {
+.footerContainer {
   background: red;
+  padding: 50px 5%;
+  .footerWrapper{
+    background-color: green;
+    .footerTop{
+      margin: 0 0 30px;
+    }
+    .footerLinks{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }

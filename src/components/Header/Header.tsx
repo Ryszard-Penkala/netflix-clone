@@ -4,7 +4,7 @@ import Button from "../common/Button/Button";
 import LangPicker from "../common/LangPicker/LangPicker";
 
 const Header = () => {
-    return(
+    return (
         <header className={styles.headerSection}>
             <div className={styles.logoContainer}>
                 <Image
@@ -15,9 +15,7 @@ const Header = () => {
                 />
             </div>
             <div className={styles.buttonContainer}>
-                <div className={styles.langPicker}>
-                    <LangPicker />
-                </div>
+                <LangPicker/>
                 <Button type="buttonRed">
                     Sign In
                 </Button>
