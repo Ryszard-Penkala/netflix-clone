@@ -2,13 +2,57 @@
   background: red;
   padding: 50px 5%;
   .footerWrapper{
-    background-color: green;
+    background-color: black;
     .footerTop{
       margin: 0 0 30px;
+      font-size: 1em;
+      color: #737373;
+      letter-spacing: 0;
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
     }
     .footerLinksList{
       display: grid;
       grid-template-columns: 1fr 1fr;
+      a{
+        text-decoration: none;
+        color: #737373;
+      }
+      @media only screen and (min-width: 500px){
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      @media only screen and (min-width: 740px){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .footerLinksListItem{
+        list-style: none;
+        display: inline-block;
+        margin: 0 0 16px;
+        padding: 0 12px 0 0;
+        .footerLink{
+          font-size: 13px;
+          text-decoration: none;
+        }
+      }
+    }
+    .footerLangPicker{
+      margin: 20px 0 0;
+      div{
+        &:before{
+          width: .5rem;
+        }
+        select{
+          color: #737373;
+          margin: 0;
+        }
+      }
+    }
+    .footerCountry{
+      font-size: 13px;
+      color: #737373;
+      margin: 24px 0 13px;
     }
   }
 }
