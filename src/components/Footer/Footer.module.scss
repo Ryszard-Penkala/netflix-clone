@@ -1,4 +1,5 @@
 @import "./styles/colors";
+@import "./styles/sizes";
 
 .footerContainer {
   padding: 50px 5%;
@@ -20,10 +21,10 @@
         text-decoration: none;
         color: $font-color-main;
       }
-      @media only screen and (min-width: 500px){
+      @media only screen and (min-width: $screen-s){
         grid-template-columns: 1fr 1fr 1fr;
       }
-      @media only screen and (min-width: 740px){
+      @media only screen and (min-width: $screen-l){
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
       .footerLinksListItem{
