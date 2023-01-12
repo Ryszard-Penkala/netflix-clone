@@ -1,3 +1,5 @@
+@import "./styles/colors";
+
 .mainContent{
-  background: green;
+  background: $background-main;
 }

@@ -1,3 +1,5 @@
+@import "styles/colors";
+
 .buttonContainer{
   display: flex;
   flex-direction: row;
@@ -6,11 +8,11 @@
 }
 
 .buttonRed {
-  border: 0px solid black;
-  background: #E50914;
+  border: 0px solid $background-main;
+  background: $background-secondary;
   padding: 7px 17px;
   margin-left: 12px;
-  color: #FFFFFF;
+  color: $color-secondary;
   border-radius: 5px;
   font-size: .9rem;
   font-weight: 400;

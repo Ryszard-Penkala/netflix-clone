@@ -1,12 +1,12 @@
+@import "./styles/colors";
+
 .footerContainer {
-  background: red;
   padding: 50px 5%;
   .footerWrapper{
-    background-color: black;
     .footerTop{
       margin: 0 0 30px;
       font-size: 1em;
-      color: #737373;
+      color: $font-color-main;
       letter-spacing: 0;
       a{
         text-decoration: none;
@@ -18,7 +18,7 @@
       grid-template-columns: 1fr 1fr;
       a{
         text-decoration: none;
-        color: #737373;
+        color: $font-color-main;
       }
       @media only screen and (min-width: 500px){
         grid-template-columns: 1fr 1fr 1fr;
@@ -44,14 +44,14 @@
           width: .5rem;
         }
         select{
-          color: #737373;
+          color: $font-color-main;
           margin: 0;
         }
       }
     }
     .footerCountry{
       font-size: 13px;
-      color: #737373;
+      color: $font-color-main;
       margin: 24px 0 13px;
     }
   }
