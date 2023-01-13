@@ -5,10 +5,12 @@ type Props = {
     type: 'buttonRed',
 }
 
-const Button = ({ children, type }: Props) =>{
-    return(
+const Button = ({children, type}: Props) => {
+    return (
         <button className={styles[type]}>
-            {children}
+            <a href="/signin">
+                {children}
+            </a>
         </button>
     )
 }
