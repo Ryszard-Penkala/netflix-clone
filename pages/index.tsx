@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Footer from '../src/components/Footer/Footer'
 import Header from '../src/components/Header/Header'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
+import Image from 'next/image'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 export default function Home() {
   return (
@@ -16,7 +16,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Hello</h1>
+          main
+          <div className={styles.singleCard}>
+              <div className={styles.cardBackground}>
+                  <div className={styles.imageWrapper}>
+                      <Image
+                          src="/misc/home-bg.jpg"
+                          alt="Netflix logo"
+                          layout="fill"
+                          objectFit="cover"
+                          className={styles.bgImage}
+                      />
+                      <div className={styles.imageGradient}>
+                          image gradient
+                      </div>
+                  </div>
+              </div>
+              <div className={styles.cardText}>
+                mainTexts
+              </div>
+            </div>
       </main>
 
     </>
