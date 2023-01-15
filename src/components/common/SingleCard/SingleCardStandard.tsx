@@ -28,7 +28,7 @@ const SingleCardStandard = ({...props}: SingleCardProps) => {
                         />
                         { !props.videoSrc
                             ? null
-                            : <div className={styles.singleCardStandardVideoContainer}>
+                            : <div className={styles[props.videoClass]}>
                                 <video className={styles.singleCardVideo} autoPlay={true} playsInline={true} muted={true} loop={true}>
                                     <source
                                         // src="/misc/video-tv-0819.m4v"
@@ -37,7 +37,6 @@ const SingleCardStandard = ({...props}: SingleCardProps) => {
                                 </video>
                             </div>
                         }
-
                     </div>
                 </div>
             </div>
