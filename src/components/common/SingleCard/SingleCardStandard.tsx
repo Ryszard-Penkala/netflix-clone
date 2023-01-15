@@ -26,14 +26,17 @@ const SingleCardStandard = ({...props}: SingleCardProps) => {
                             // src="/misc/tv.png"
                             // alt="TV Icon"
                         />
-                        <div className={styles.singleCardStandardVideoContainer}>
-                            <video className={styles.singleCardVideo} autoPlay={true} playsInline={true} muted={true} loop={true}>
-                                <source
-                                    // src="/misc/video-tv-0819.m4v"
-                                    src={props.videoSrc}
-                                    type="video/mp4"/>
-                            </video>
-                        </div>
+                        { !props.videoSrc
+                            ? null
+                            : <div className={styles.singleCardStandardVideoContainer}>
+                                <video className={styles.singleCardVideo} autoPlay={true} playsInline={true} muted={true} loop={true}>
+                                    <source
+                                        // src="/misc/video-tv-0819.m4v"
+                                        src={props.videoSrc}
+                                        type="video/mp4"/>
+                                </video>
+                            </div>
+                        }
 
                     </div>
                 </div>
