@@ -4,6 +4,8 @@ import Header from '../src/components/Header/Header'
 import styles from '../styles/Home.module.scss'
 import Image from 'next/image'
 import SingleCardStandard from "../src/components/common/SingleCard/SingleCardStandard";
+import {singleCardStandardData} from "../data/singleCardStandardData";
+import singleCardStandard from "../src/components/common/SingleCard/SingleCardStandard";
 
 
 export default function Home() {
@@ -35,7 +37,13 @@ export default function Home() {
                         mainTexts
                     </div>
                 </div>
-                <SingleCardStandard />
+                <SingleCardStandard
+                    headerOne = {singleCardStandardData[0].headerOne}
+                    headerSubtitle={singleCardStandardData[0].headerSubtitle}
+                    imgSrc={singleCardStandardData[0].imgSrc}
+                    imgAlt={singleCardStandardData[0].imgAlt}
+                    videoSrc={singleCardStandardData[0].videoSrc}
+                />
             </main>
         </>
     )
