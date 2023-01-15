@@ -37,38 +37,20 @@ export default function Home() {
                         mainTexts
                     </div>
                 </div>
-                <SingleCardStandard
-                    headerOne = {singleCardStandardData[0].headerOne}
-                    headerSubtitle={singleCardStandardData[0].headerSubtitle}
-                    imgSrc={singleCardStandardData[0].imgSrc}
-                    imgAlt={singleCardStandardData[0].imgAlt}
-                    videoSrc={singleCardStandardData[0].videoSrc}
-                    videoClass={singleCardStandardData[0].videoClass}
-                />
-                <SingleCardStandard
-                    headerOne = {singleCardStandardData[1].headerOne}
-                    headerSubtitle={singleCardStandardData[1].headerSubtitle}
-                    imgSrc={singleCardStandardData[1].imgSrc}
-                    imgAlt={singleCardStandardData[1].imgAlt}
-                    videoSrc={singleCardStandardData[1].videoSrc}
-                    videoClass={singleCardStandardData[1].videoClass}
-                />
-                <SingleCardStandard
-                    headerOne = {singleCardStandardData[2].headerOne}
-                    headerSubtitle={singleCardStandardData[2].headerSubtitle}
-                    imgSrc={singleCardStandardData[2].imgSrc}
-                    imgAlt={singleCardStandardData[2].imgAlt}
-                    videoSrc={singleCardStandardData[2].videoSrc}
-                    videoClass={singleCardStandardData[2].videoClass}
-                />
-                <SingleCardStandard
-                    headerOne = {singleCardStandardData[3].headerOne}
-                    headerSubtitle={singleCardStandardData[3].headerSubtitle}
-                    imgSrc={singleCardStandardData[3].imgSrc}
-                    imgAlt={singleCardStandardData[3].imgAlt}
-                    videoSrc={singleCardStandardData[3].videoSrc}
-                    videoClass={singleCardStandardData[3].videoClass}
-                />
+
+                {singleCardStandardData.map((el, index) => {
+                    return (
+                        <SingleCardStandard
+                            key={index}
+                            headerOne={el.headerOne}
+                            headerSubtitle={el.headerSubtitle}
+                            imgSrc={el.imgSrc}
+                            imgAlt={el.imgAlt}
+                            videoSrc={el.videoSrc}
+                            videoClass={el.videoClass}
+                        />
+                    )
+                })}
             </main>
         </>
     )
