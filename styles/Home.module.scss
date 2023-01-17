@@ -7,36 +7,4 @@
     flex-direction: column;
 }
 
-.singleCard{
-    border-bottom: 8px solid $color-tertiary;
-    position: relative;
-    .cardBackground{
-        position: absolute;
-        left: 0;
-        top: calc( -56px - 2.750rem);
-        overflow: hidden;
-        z-index: 0;
-        width: 100%;
-        height: 693.5px;
-        .imageWrapper{
 
-            .bgImage{
-                position: absolute;
-                overflow: hidden;
-                z-index: 0;
-            }
-            .imageGradient{
-                height: 693.5px;
-                width: 100%;
-                z-index: 1 ;
-                position: absolute;
-                background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 40%,transparent 75%,rgba(0,0,0,.8));
-            }
-        }
-
-    }
-    .cardText{
-        background: transparent;
-        height: 600px;
-    }
-}

@@ -6,6 +6,7 @@ import Image from 'next/image'
 import SingleCardStandard from "../src/components/common/SingleCard/SingleCardStandard";
 import {singleCardStandardData} from "../data/singleCardStandardData";
 import singleCardStandard from "../src/components/common/SingleCard/SingleCardStandard";
+import SingleCard from "../src/components/common/SingleCard/SingleCard";
 
 
 export default function Home() {
@@ -18,26 +19,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <main className={styles.main}>
-                <div className={styles.singleCard}>
-                    <div className={styles.cardBackground}>
-                        <div className={styles.imageWrapper}>
-                            <Image
-                                src="/misc/home-bg.jpg"
-                                alt="Netflix logo"
-                                layout="fill"
-                                objectFit="cover"
-                                className={styles.bgImage}
-                            />
-                            <div className={styles.imageGradient}>
-                                image gradient
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.cardText}>
-                        mainTexts
-                    </div>
-                </div>
-
+                <SingleCard />
                 {singleCardStandardData.map((el, index) => {
                     return (
                         <SingleCardStandard
