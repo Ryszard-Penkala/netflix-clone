@@ -14,7 +14,6 @@ const SingleCard = () => {
                         className={styles.bgImage}
                     />
                     <div className={styles.imageGradient}>
-                        image gradient
                     </div>
                 </div>
             </div>
