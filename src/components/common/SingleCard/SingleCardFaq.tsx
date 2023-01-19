@@ -31,7 +31,7 @@ const SingleCardFaq = () => {
                                 <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
                             </svg>
                         </button>
-                        <div className={styles.faqAnswer}>
+                        <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
                                 Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from 29 zł to 60 zł a month. No extra costs, no contracts.
                             </span>
@@ -44,7 +44,7 @@ const SingleCardFaq = () => {
                                 <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
                             </svg>
                         </button>
-                        <div className={styles.faqAnswer}>
+                        <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
                                 Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.                                <br/>
                                 <br/>
@@ -60,7 +60,7 @@ const SingleCardFaq = () => {
                                 <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
                             </svg>
                         </button>
-                        <div className={styles.faqAnswer}>
+                        <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
                                 Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
                             </span>
@@ -73,7 +73,7 @@ const SingleCardFaq = () => {
                                 <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
                             </svg>
                         </button>
-                        <div className={styles.faqAnswer}>
+                        <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
                                 Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
                             </span>
@@ -96,7 +96,6 @@ const SingleCardFaq = () => {
                         </div>
                     </li>
                 </ul>
-            Text
             </div>
         </div>
     )
