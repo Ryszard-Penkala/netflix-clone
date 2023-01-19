@@ -1,0 +1,56 @@
+@import "/styles/colors";
+@import "/styles/sizes";
+
+.singleCardStandard{
+  border-bottom: 8px solid $color-tertiary;
+  position: relative;
+  position: relative;
+  padding: 50px 0;
+  color: $font-color-secondary;
+  text-align: center;
+  .singleCardStandardContainer{
+    font-size: 1.125rem;
+    .singleCardStandardTitle{
+      font-size: 1.625rem;
+      padding: 0 5%;
+      margin-bottom: 0.5rem;
+    }
+    .faqList{
+      display: block;
+      margin: 1.25em auto;
+      max-width: 815px;
+      .faqListItem{
+        list-style-type: none;
+        margin: 0 0 8px;
+        .faqQuestion,
+        .faqAnswer{
+          font-size: inherit;
+          border: 0;
+          margin-bottom: 1px;
+          padding: .8em 2.2em .8em 1.2em;
+          position: relative;
+          width: 100%;
+          background: $background-tertiary;
+          display: block;
+          text-align: left;
+          color: inherit;
+          .svgClosed{
+            transform: translateY(-50%);
+            rotate: 45deg;
+          }
+          .svgOpen{
+            rotate: 0deg;
+          }
+          .svgIcon{
+            fill: $font-color-secondary;
+            height: 1em;
+            width: 1em;
+            position: absolute;
+            right: 1em;
+            top: 50%;
+          }
+        }
+      }
+    }
+  }
+}

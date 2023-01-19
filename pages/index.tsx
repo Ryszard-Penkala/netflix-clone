@@ -7,6 +7,7 @@ import SingleCardStandard from "../src/components/common/SingleCard/SingleCardSt
 import {singleCardStandardData} from "../data/singleCardStandardData";
 import singleCardStandard from "../src/components/common/SingleCard/SingleCardStandard";
 import SingleCard from "../src/components/common/SingleCard/SingleCard";
+import SingleCardFaq from "../src/components/common/SingleCard/SingleCardFaq";
 
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
                         />
                     )
                 })}
+                <SingleCardFaq />
             </main>
         </>
     )
