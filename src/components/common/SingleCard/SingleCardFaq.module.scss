@@ -34,6 +34,21 @@
           display: block;
           text-align: left;
           color: inherit;
+          overflow: hidden;
+          .faqAnswerClosed{
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height .25s cubic-bezier(.5,0,.1,1);
+            background: red;
+          }
+          .faqAnswerOpen{
+            max-height: 1200px;
+            transition: max-height .25s cubic-bezier(.5,0,.1,1);
+          }
+          & span{
+            display: inline-block;
+            padding: 1.2em 0;
+          }
           .svgClosed{
             transform: translateY(-50%);
             rotate: 45deg;
@@ -49,6 +64,7 @@
             right: 1em;
             top: 50%;
           }
+
         }
       }
     }
