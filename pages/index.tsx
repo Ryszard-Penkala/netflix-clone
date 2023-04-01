@@ -22,6 +22,7 @@ export default function Home() {
             <main className={styles.main}>
                 <SingleCard />
                 {singleCardStandardData.map((el, index) => {
+                    const rowReverseClass = index % 2 === 0 ? "" : "rowReverse"
                     return (
                         <SingleCardStandard
                             key={index}
@@ -31,6 +32,7 @@ export default function Home() {
                             imgAlt={el.imgAlt}
                             videoSrc={el.videoSrc}
                             videoClass={el.videoClass}
+                            rowReverseClass={rowReverseClass}
                         />
                     )
                 })}

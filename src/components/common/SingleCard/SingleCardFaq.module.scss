@@ -35,7 +35,8 @@
           text-align: left;
           color: inherit;
           overflow: hidden;
-          & span{
+          cursor: pointer;
+          span{
             display: inline-block;
             padding: 1.2em 0;
           }
@@ -64,6 +65,7 @@
         .faqAnswerOpen{
           max-height: 1200px;
           transition: max-height .25s cubic-bezier(.5,0,.1,1);
+          padding: 1.2em;
         }
       }
     }

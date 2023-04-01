@@ -5,9 +5,10 @@ export type SingleCardProps = {
     imgAlt: string;
     videoSrc?: string;
     videoClass: string;
+    rowReverseClass: "" | "rowReverse";
 }
 
-export const singleCardStandardData: SingleCardProps[] = [
+export const singleCardStandardData: Omit<SingleCardProps, 'rowReverseClass'>[] = [
     {
         headerOne: "Enjoy on your TV.",
         headerSubtitle: "Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.",
@@ -22,8 +23,7 @@ export const singleCardStandardData: SingleCardProps[] = [
         imgSrc: "/misc/home-mobile.jpg",
         imgAlt: "Download Icon",
         videoSrc: "",
-        videoClass: ""
-
+        videoClass: "",
     },
     {
         headerOne: "Watch everywhere.",
@@ -31,7 +31,7 @@ export const singleCardStandardData: SingleCardProps[] = [
         imgSrc: "/misc/device-pile.png",
         imgAlt: "Device Pile Icon",
         videoSrc: "/misc/video-devices.m4v",
-        videoClass: "singleCardSmallerVideoContainer"
+        videoClass: "singleCardSmallerVideoContainer",
     },
     {
         headerOne: "Create profiles for kids.",
@@ -39,7 +39,7 @@ export const singleCardStandardData: SingleCardProps[] = [
         imgSrc: "/misc/kids.png",
         imgAlt: "Kids Icon",
         videoSrc: "",
-        videoClass: ""
+        videoClass: "",
     }
 ]
 

@@ -6,7 +6,7 @@ import {SingleCardProps} from "../../../../data/singleCardStandardData";
 const SingleCardStandard = ({...props}: SingleCardProps) => {
     return(
         <div className={styles.singleCardStandard}>
-            <div className={styles.singleCardStandardContainer}>
+            <div className={`${styles.singleCardStandardContainer} ${styles[props.rowReverseClass]}`}>
                 <div className={styles.singleCardStandardText}>
                     <h1 className={styles.singleCardStandardTitle}>
                         {/*Enjoy on your TV.*/}
