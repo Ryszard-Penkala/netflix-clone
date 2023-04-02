@@ -9,12 +9,10 @@ const SingleCardStandard = ({...props}: SingleCardProps) => {
             <div className={`${styles.singleCardStandardContainer} ${styles[props.rowReverseClass]}`}>
                 <div className={styles.singleCardStandardText}>
                     <h1 className={styles.singleCardStandardTitle}>
-                        {/*Enjoy on your TV.*/}
                         {props.headerOne}
                     </h1>
                     <h2 className={styles.singleCardStandardSubtitle}>
                         {props.headerSubtitle}
-                        {/*Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.*/}
                     </h2>
                 </div>
                 <div className={styles.singleCardStandardImgContainer}>
@@ -23,15 +21,12 @@ const SingleCardStandard = ({...props}: SingleCardProps) => {
                             className={styles.standardImage}
                             src={props.imgSrc}
                             alt={props.imgAlt}
-                            // src="/misc/tv.png"
-                            // alt="TV Icon"
                         />
                         { !props.videoSrc
                             ? null
                             : <div className={styles[props.videoClass]}>
                                 <video className={styles.singleCardVideo} autoPlay={true} playsInline={true} muted={true} loop={true}>
                                     <source
-                                        // src="/misc/video-tv-0819.m4v"
                                         src={props.videoSrc}
                                         type="video/mp4"/>
                                 </video>

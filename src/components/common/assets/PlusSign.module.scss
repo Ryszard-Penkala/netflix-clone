@@ -1,0 +1,17 @@
+@import "/styles/colors";
+
+.svgClosed{
+  transform: translateY(-50%);
+  rotate: 45deg;
+}
+.svgOpen{
+  rotate: 0deg;
+}
+.svgIcon{
+  fill: $font-color-secondary;
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+}

@@ -1,4 +1,5 @@
 import styles from "./SingleCardFaq.module.scss"
+import PlusSign from "../assets/PlusSign";
 
 const SingleCardFaq = () => {
     return(
@@ -11,9 +12,7 @@ const SingleCardFaq = () => {
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
                             What is Netflix?
-                            <svg viewBox="0 0 26 26" className={`${styles.svgIcon} ${styles.svgClosed}`} focusable={true}>
-                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                            </svg>
+                            <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerOpen}`}>
                             <span>
@@ -27,9 +26,7 @@ const SingleCardFaq = () => {
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
                             How much does Netflix cost??
-                            <svg viewBox="0 0 26 26" className={`${styles.svgIcon} ${styles.svgClosed}`} focusable={true}>
-                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                            </svg>
+                            <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
@@ -40,9 +37,7 @@ const SingleCardFaq = () => {
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
                             Where can I watch?
-                            <svg viewBox="0 0 26 26" className={`${styles.svgIcon} ${styles.svgClosed}`} focusable={true}>
-                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                            </svg>
+                            <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
@@ -56,9 +51,7 @@ const SingleCardFaq = () => {
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
                             How do I cancel?
-                            <svg viewBox="0 0 26 26" className={`${styles.svgIcon} ${styles.svgClosed}`} focusable={true}>
-                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                            </svg>
+                            <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
@@ -69,9 +62,7 @@ const SingleCardFaq = () => {
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
                             What can I watch on Netflix?
-                            <svg viewBox="0 0 26 26" className={`${styles.svgIcon} ${styles.svgClosed}`} focusable={true}>
-                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                            </svg>
+                            <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
@@ -82,9 +73,7 @@ const SingleCardFaq = () => {
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
                             Is Netflix good for kids?
-                            <svg viewBox="0 0 26 26" className={`${styles.svgIcon} ${styles.svgClosed}`} focusable={true}>
-                                <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
-                            </svg>
+                            <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
