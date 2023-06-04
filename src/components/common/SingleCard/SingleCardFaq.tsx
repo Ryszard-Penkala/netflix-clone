@@ -40,6 +40,16 @@ const SingleCardFaq = () => {
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
                                 {FrequentlyAskedQuestionsData[1].answerPartOne}
+                                {FrequentlyAskedQuestionsData[1].answerPartTwo
+                                    ?
+                                    <>
+                                        <br/>
+                                        <br/>
+                                        {FrequentlyAskedQuestionsData[1].answerPartTwo}
+                                    </>
+                                    :
+                                    ''
+                                }
                             </span>
                         </div>
                     </li>
@@ -51,9 +61,16 @@ const SingleCardFaq = () => {
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
                                 {FrequentlyAskedQuestionsData[2].answerPartOne}
-                                <br/>
-                                <br/>
-                                {FrequentlyAskedQuestionsData[2].answerPartTwo}
+                                {FrequentlyAskedQuestionsData[2].answerPartTwo
+                                    ?
+                                    <>
+                                        <br/>
+                                        <br/>
+                                        {FrequentlyAskedQuestionsData[2].answerPartTwo}
+                                    </>
+                                    :
+                                    ''
+                                }
                             </span>
                         </div>
                     </li>
@@ -65,6 +82,16 @@ const SingleCardFaq = () => {
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
                                 {FrequentlyAskedQuestionsData[3].answerPartOne}
+                                {FrequentlyAskedQuestionsData[3].answerPartTwo
+                                    ?
+                                    <>
+                                        <br/>
+                                        <br/>
+                                        {FrequentlyAskedQuestionsData[3].answerPartTwo}
+                                    </>
+                                    :
+                                    ''
+                                }
                             </span>
                         </div>
                     </li>
@@ -76,6 +103,16 @@ const SingleCardFaq = () => {
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
                                 {FrequentlyAskedQuestionsData[4].answerPartOne}
+                                {FrequentlyAskedQuestionsData[4].answerPartTwo
+                                    ?
+                                    <>
+                                        <br/>
+                                        <br/>
+                                        {FrequentlyAskedQuestionsData[4].answerPartTwo}
+                                    </>
+                                    :
+                                    ''
+                                }
                             </span>
                         </div>
                     </li>
@@ -87,9 +124,16 @@ const SingleCardFaq = () => {
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
                                 {FrequentlyAskedQuestionsData[5].answerPartOne}
-                                <br/>
-                                <br/>
-                                {FrequentlyAskedQuestionsData[5].answerPartTwo}
+                                {FrequentlyAskedQuestionsData[5].answerPartTwo
+                                    ?
+                                    <>
+                                        <br/>
+                                        <br/>
+                                        {FrequentlyAskedQuestionsData[5].answerPartTwo}
+                                    </>
+                                    :
+                                    ''
+                                }
                             </span>
                         </div>
                     </li>
