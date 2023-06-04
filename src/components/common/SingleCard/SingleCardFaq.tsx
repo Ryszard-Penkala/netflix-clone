@@ -1,6 +1,8 @@
 import styles from "./SingleCardFaq.module.scss"
 import PlusSign from "../assets/PlusSign";
 
+import {FrequentlyAskedQuestionsData} from "../../../../data/frequentlyAskedQuestionsData"
+
 const SingleCardFaq = () => {
     return(
         <div className={styles.singleCardStandard}>
@@ -11,76 +13,83 @@ const SingleCardFaq = () => {
                 <ul className={styles.faqList}>
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
-                            What is Netflix?
+                            {FrequentlyAskedQuestionsData[0].question}
                             <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerOpen}`}>
                             <span>
-                                Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
-                                <br/>
-                                <br/>
-                                You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                                {FrequentlyAskedQuestionsData[0].answerPartOne}
+                                {FrequentlyAskedQuestionsData[0].answerPartTwo
+                                    ?
+                                        <>
+                                            <br/>
+                                            <br/>
+                                            {FrequentlyAskedQuestionsData[0].answerPartTwo}
+                                        </>
+                                    :
+                                        ''
+                                }
                             </span>
                         </div>
                     </li>
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
-                            How much does Netflix cost??
+                            {FrequentlyAskedQuestionsData[1].question}
                             <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
-                                Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from 29 zł to 60 zł a month. No extra costs, no contracts.
+                                {FrequentlyAskedQuestionsData[1].answerPartOne}
                             </span>
                         </div>
                     </li>
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
-                            Where can I watch?
+                            {FrequentlyAskedQuestionsData[2].question}
                             <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
-                                Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.                                <br/>
+                                {FrequentlyAskedQuestionsData[2].answerPartOne}
                                 <br/>
                                 <br/>
-                                You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                                {FrequentlyAskedQuestionsData[2].answerPartTwo}
                             </span>
                         </div>
                     </li>
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
-                            How do I cancel?
+                            {FrequentlyAskedQuestionsData[3].question}
                             <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
-                                Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                                {FrequentlyAskedQuestionsData[3].answerPartOne}
                             </span>
                         </div>
                     </li>
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
-                            What can I watch on Netflix?
+                            {FrequentlyAskedQuestionsData[4].question}
                             <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
-                                Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                                {FrequentlyAskedQuestionsData[4].answerPartOne}
                             </span>
                         </div>
                     </li>
                     <li className={styles.faqListItem}>
                         <button className={styles.faqQuestion}>
-                            Is Netflix good for kids?
+                            {FrequentlyAskedQuestionsData[5].question}
                             <PlusSign/>
                         </button>
                         <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
                             <span>
-                                The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+                                {FrequentlyAskedQuestionsData[5].answerPartOne}
                                 <br/>
                                 <br/>
-                                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.
+                                {FrequentlyAskedQuestionsData[5].answerPartTwo}
                             </span>
                         </div>
                     </li>
