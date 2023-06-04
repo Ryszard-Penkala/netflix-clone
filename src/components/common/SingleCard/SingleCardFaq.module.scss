@@ -19,55 +19,6 @@
       display: block;
       margin: 1.25em auto;
       max-width: 815px;
-      .faqListItem{
-        list-style-type: none;
-        margin: 0 0 8px;
-        .faqQuestion,
-        .faqAnswer{
-          font-size: inherit;
-          border: 0;
-          margin-bottom: 1px;
-          padding: .8em 2.2em .8em 1.2em;
-          position: relative;
-          width: 100%;
-          background: $background-tertiary;
-          display: block;
-          text-align: left;
-          color: inherit;
-          overflow: hidden;
-          cursor: pointer;
-          span{
-            display: inline-block;
-            padding: 1.2em 0;
-          }
-          .svgClosed{
-            transform: translateY(-50%);
-            rotate: 45deg;
-          }
-          .svgOpen{
-            rotate: 0deg;
-          }
-          .svgIcon{
-            fill: $font-color-secondary;
-            height: 1em;
-            width: 1em;
-            position: absolute;
-            right: 1em;
-            top: 50%;
-          }
-        }
-        .faqAnswerClosed{
-          max-height: 0px;
-          overflow: hidden;
-          transition: max-height .25s cubic-bezier(.5,0,.1,1);
-          padding: 0;
-        }
-        .faqAnswerOpen{
-          max-height: 1200px;
-          transition: max-height .25s cubic-bezier(.5,0,.1,1);
-          padding: 1.2em;
-        }
-      }
     }
   }
 }
