@@ -6,6 +6,10 @@ import {
 import FaqListItem from "./FaqListItem/FaqListItem";
 
 const SingleCardFaq = () => {
+    const toggleFaqAnswerClass = () => {
+        console.log('klaikam subcompoennt')
+    }
+
     return(
         <div className={styles.singleCardStandard}>
             <div className={styles.singleCardStandardContainer}>
@@ -16,6 +20,7 @@ const SingleCardFaq = () => {
                     {FrequentlyAskedQuestionsData.map((el, index) => {
                         return (
                             <FaqListItem
+                                toggleFaqAnswerClass ={toggleFaqAnswerClass}
                                 key={index}
                                 question={el.question}
                                 answerPartOne={el.answerPartOne}

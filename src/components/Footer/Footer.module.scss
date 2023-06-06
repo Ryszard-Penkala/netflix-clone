@@ -27,16 +27,6 @@
       @media only screen and (min-width: $screen-l){
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
-      .footerLinksListItem{
-        list-style: none;
-        display: inline-block;
-        margin: 0 0 16px;
-        padding: 0 12px 0 0;
-        .footerLink{
-          font-size: 13px;
-          text-decoration: none;
-        }
-      }
     }
     .footerLangPicker{
       margin: 20px 0 0;

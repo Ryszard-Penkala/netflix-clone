@@ -2,6 +2,7 @@ export type FrequentlyAskedQuestionsDataProps = {
     question: string;
     answerPartOne: string;
     answerPartTwo?: string;
+    toggleFaqAnswerClass?: (e:any)=>void;
 }
 
 export const FrequentlyAskedQuestionsData: FrequentlyAskedQuestionsDataProps[] = [

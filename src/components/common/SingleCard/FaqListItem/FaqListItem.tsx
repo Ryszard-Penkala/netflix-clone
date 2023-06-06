@@ -4,8 +4,9 @@ import {FrequentlyAskedQuestionsDataProps} from "../../../../../data/frequentlyA
 import PlusSign from "../../assets/PlusSign";
 
 const FaqListItem = ({...props}: FrequentlyAskedQuestionsDataProps) => {
+
     return(
-        <li className={styles.faqListItem}>
+        <li className={styles.faqListItem} onClick={props.toggleFaqAnswerClass} >
             <button className={styles.faqQuestion}>
                 {props.question}
                 <PlusSign/>
