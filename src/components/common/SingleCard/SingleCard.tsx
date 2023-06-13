@@ -13,12 +13,22 @@ const SingleCard = () => {
                         objectFit="cover"
                         className={styles.bgImage}
                     />
-                    <div className={styles.imageGradient}>
-                    </div>
+                    <div className={styles.imageGradient}/>
                 </div>
             </div>
             <div className={styles.cardText}>
-                mainTexts
+                <div className={styles.cardTextContainer}>
+                    <div className={styles.cardTitleTextContainer}>
+                        <h1 className={styles.cardTitleText}>
+                            Unlimited movies, TV shows, and more
+                        </h1>
+                    </div>
+                    <div className={styles.cardItem}>
+                        <p className={styles.cardItemText}>
+                            Watch anywhere. Cancel anytime.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     )
