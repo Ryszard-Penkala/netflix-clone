@@ -39,6 +39,7 @@
     color: $font-color-secondary;
     .cardTextContainer {
       padding: 0rem 2.5rem;
+      text-align: center;
       @media only screen and (min-width: $screen-m) {
         padding: 0rem 4rem;
       }
@@ -58,8 +59,40 @@
           font-size: 1.125rem;
           font-weight: 500;
         }
+      }
+      .emailItem{
+        padding: 1rem 0 0 0;
+        .emailForm{
+          display: flex;
+          flex-direction: column;
+          .emailHeader{
+            color: $color-secondary;
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.6875rem;
+          }
+          .emailContainer{
+            margin-top: 16px;
+            text-align: left;
+            max-width: 36.625rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            .emailBar{
+              .emailLabel{
+              }
+              .emailInputContainer{
 
+                .emailInputField{
 
+                }
+                .emailBackgroundStyle{
+
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
