@@ -40,7 +40,7 @@ const SingleCard = () => {
                                             Email address
                                         </label>
                                         <div className={styles.emailInputContainer}>
-                                            <input type="email" autoComplete="email" minLength={5} maxLength={50} name="email" id="emailInputField"/>
+                                            <input type="email" autoComplete="email" minLength={5} maxLength={50} name="email" id="emailInputField" className={styles.emailInputField}/>
                                             <div className={styles.emailBackgroundStyle}/>
                                         </div>
 
