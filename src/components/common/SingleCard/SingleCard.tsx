@@ -1,7 +1,15 @@
 import styles from "./SingleCard.module.scss";
 import Image from "next/image";
+import {useState} from "react";
 
 const SingleCard = () => {
+    const [email, setEmail] = useState<string>('')
+    const [error, setError] = useState<string | null>(null)
+
+    const handleEmailChange = (e:any) => {
+        setEmail(e.target.value);
+    }
+
     return(
         <div className={styles.singleCard}>
             <div className={styles.cardBackground}>
@@ -40,12 +48,20 @@ const SingleCard = () => {
                                             Email address
                                         </label>
                                         <div className={styles.emailInputContainer}>
-                                            <input type="email" autoComplete="email" minLength={5} maxLength={50} name="email" id="emailInputField" className={styles.emailInputField}/>
+                                            <input
+                                                type="email"
+                                                autoComplete="email"
+                                                minLength={5}
+                                                maxLength={50}
+                                                name="email"
+                                                id="emailInputField"
+                                                className={styles.emailInputField}
+                                                value={email}
+                                                onChange={handleEmailChange}
+                                            />
                                             <div className={styles.emailBackgroundStyle}/>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </form>
 
