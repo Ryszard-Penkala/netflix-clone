@@ -4,11 +4,12 @@ import {
     FrequentlyAskedQuestionsData,
 } from "../../../../data/frequentlyAskedQuestionsData"
 import FaqListItem from "./FaqListItem/FaqListItem";
+import {useState} from "react";
 
 const SingleCardFaq = () => {
-    const toggleFaqAnswerClass = () => {
-        console.log('klaikam subcompoennt')
-    }
+
+    const [active, setActive] = useState('')
+
 
     return(
         <div className={styles.singleCardStandard}>
@@ -16,15 +17,18 @@ const SingleCardFaq = () => {
                 <h1 className={styles.singleCardStandardTitle}>
                     Frequently Asked Questions
                 </h1>
-                <ul className={styles.faqList}>
+                <ul className={styles.faqList} >
                     {FrequentlyAskedQuestionsData.map((el, index) => {
+
                         return (
                             <FaqListItem
-                                toggleFaqAnswerClass ={toggleFaqAnswerClass}
                                 key={index}
+                                id = {String(index)}
                                 question={el.question}
                                 answerPartOne={el.answerPartOne}
                                 answerPartTwo={el.answerPartTwo}
+                                active={active}
+                                setActive={setActive}
                             />
                         )
                     })}

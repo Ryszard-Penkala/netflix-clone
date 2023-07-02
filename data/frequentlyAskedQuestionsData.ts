@@ -1,8 +1,12 @@
 export type FrequentlyAskedQuestionsDataProps = {
+    id?: string;
     question: string;
     answerPartOne: string;
     answerPartTwo?: string;
-    toggleFaqAnswerClass?: (e:any)=>void;
+    active?: string;
+    setActive?: (e:any)=>void;
+
+    // toggleFaqAnswerClass?: (e:any)=>void;
 }
 
 export const FrequentlyAskedQuestionsData: FrequentlyAskedQuestionsDataProps[] = [

@@ -3,15 +3,22 @@ import {FrequentlyAskedQuestionsDataProps} from "../../../../../data/frequentlyA
 
 import PlusSign from "../../assets/PlusSign";
 
-const FaqListItem = ({...props}: FrequentlyAskedQuestionsDataProps) => {
+const FaqListItem = ({...props}: FrequentlyAskedQuestionsDataProps, ) => {
 
     return(
-        <li className={styles.faqListItem} onClick={props.toggleFaqAnswerClass} >
-            <button className={styles.faqQuestion}>
+        <li className={styles.faqListItem} >
+            <button className={styles.faqQuestion} onClick={()=> {
+                if ((props.active === props.id) && props.setActive){
+                    props.setActive('')
+                } else {
+                    props.setActive && props.setActive(props.id)
+                }
+            }}>
                 {props.question}
                 <PlusSign/>
             </button>
-            <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}`}>
+            <div className={`${styles.faqAnswer} ${styles.faqAnswerClosed}` + (props.active === props.id ? `${styles.faqAnswerOpen}` : ``)}>
+
                             <span>
                                 {props.answerPartOne}
                                 {props.answerPartTwo
