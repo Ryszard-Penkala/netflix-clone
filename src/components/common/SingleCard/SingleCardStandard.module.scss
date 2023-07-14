@@ -39,6 +39,8 @@
   position: relative;
   padding: 50px 5%;
   color: $font-color-secondary;
+  display: flex;
+  justify-content: space-between;
 
   .singleCardStandardContainer {
     display: flex;
@@ -46,6 +48,7 @@
     margin: 0 auto;
     justify-items: center;
     align-items: center;
+    justify-content: space-evenly;
     @media only screen and (min-width: $screen-xl) {
       flex-direction: row;
     }
