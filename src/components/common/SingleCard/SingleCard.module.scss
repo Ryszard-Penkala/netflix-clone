@@ -12,7 +12,7 @@
     overflow: hidden;
     z-index: 0;
     width: 100%;
-    height: 693.5px;
+    height: 793.5px;
     .imageWrapper {
       .bgImage {
         position: absolute;
@@ -20,7 +20,7 @@
         z-index: -2;
       }
       .imageGradient {
-        height: 693.5px;
+        height: 793.5px;
         width: 100%;
         position: absolute;
         //z-index: -1 ;
@@ -33,7 +33,7 @@
   .cardText {
     position: relative;
     background: transparent;
-    height: 600px;
+    height: 700px;
     z-index: 1;
     padding: 50px 5%;
     color: $font-color-secondary;
@@ -141,11 +141,6 @@
                     box-shadow: inset 0 0 20px 20px rgba(22, 22, 22, 0.7);
                   }
                 }
-                //.emailBackgroundStyle{
-                //  background-color: rgba(22, 22, 22, 0.7);
-                //  border: 1px solid red;
-                //  border-radius: 0.25rem;
-                //}
               }
             }
           }
