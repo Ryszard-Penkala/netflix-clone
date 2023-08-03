@@ -2,7 +2,7 @@ import styles from "./Button.module.scss"
 
 type Props = {
     children: string,
-    type: 'buttonRed',
+    type: 'buttonRed' | 'getStartedButton',
 }
 
 const Button = ({children, type}: Props) => {

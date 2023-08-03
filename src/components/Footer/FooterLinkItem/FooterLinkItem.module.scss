@@ -1,8 +1,12 @@
+@import "./styles/colors";
+
 .footerLinksListItem{
   list-style: none;
   display: inline-block;
   margin: 0 0 16px;
   padding: 0 12px 0 0;
+  text-decoration: underline;
+  color: $font-color-main;
   .footerLink{
     font-size: 13px;
     text-decoration: none;

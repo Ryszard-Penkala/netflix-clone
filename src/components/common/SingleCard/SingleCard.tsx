@@ -1,6 +1,7 @@
 import styles from "./SingleCard.module.scss";
 import Image from "next/image";
 import {useState} from "react";
+import Button from "../Button/Button";
 
 const SingleCard = () => {
     const [email, setEmail] = useState<string>('')
@@ -62,12 +63,10 @@ const SingleCard = () => {
                                             <div className={styles.emailBackgroundStyle}/>
                                         </div>
                                     </div>
+                                    <Button type={"getStartedButton"}>Get Started</Button>
                                 </div>
                             </form>
-
-
                         </div>
-
                     </div>
                 </div>
             </div>
