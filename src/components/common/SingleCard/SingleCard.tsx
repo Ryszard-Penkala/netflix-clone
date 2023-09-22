@@ -45,16 +45,16 @@ const SingleCard = () => {
                                 </h3>
                                 <div className={styles.emailContainer}>
                                     <div className={styles.emailBar}>
-                                        <label htmlFor="emailInputField" className={`${styles.emailLabel}`}>
-                                        {/*<label htmlFor="emailInputField" className={`${styles.emailLabel}` + (email ? ` ${styles.emailFilledLabel}` : ``)}>*/}
+                                        <label htmlFor="emailInputField" className={`${styles.emailLabel} ` + (email ? `${styles.emailFilledLabel}` : ``)}>
                                             Email address
                                         </label>
                                         <div className={styles.emailInputContainer}>
                                             <input
                                                 type="email"
                                                 autoComplete="email"
+                                                size={64}
                                                 minLength={5}
-                                                maxLength={50}
+                                                maxLength={64}
                                                 name="email"
                                                 id="emailInputField"
                                                 className={styles.emailInputField}
