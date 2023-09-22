@@ -64,7 +64,9 @@ const SingleCard = () => {
                                             <div className={styles.emailBackgroundStyle}/>
                                         </div>
                                     </div>
-                                    <Button type={"getStartedButton"}>Get Started</Button>
+                                    <Button type={"getStartedButton"}>
+                                        Get Started
+                                    </Button>
                                 </div>
                             </form>
                         </div>

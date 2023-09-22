@@ -142,11 +142,12 @@
               .emailInputContainer{
                 width: 100%;
                 padding: 0;
-                min-width: 12.5rem;
+                min-width: 11.5rem;
                 font-weight: 400;
                 font-size: 1rem;
                 color: $font-color-secondary;
                 z-index: 0;
+
                 @media only screen and (min-width: $screen-m) {
                   position: absolute;
                 }
@@ -167,6 +168,9 @@
                     -webkit-text-fill-color: $font-color-secondary;
                     transition: background-color 5000s ease-in-out 0s;
                     box-shadow: inset 0 0 20px 20px rgba(22, 22, 22, 0.7);
+                  }
+                  &:focus{
+                    outline: $font-color-secondary solid 0.125rem;
                   }
                 }
               }

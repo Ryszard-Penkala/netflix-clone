@@ -10,6 +10,13 @@ const Button = ({children, type}: Props) => {
         <button className={styles[type]}>
             <a href="/signin">
                 {children}
+                {type === 'getStartedButton'
+                    ? (<p className={styles.getStartedArrowContainer}>
+                        <div className={styles.getStartedArrow}>
+
+                        </div>
+                    </p>)
+                : ''}
             </a>
         </button>
     )
