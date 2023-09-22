@@ -7,11 +7,11 @@ const SingleCard = () => {
     const [email, setEmail] = useState<string>('')
     const [error, setError] = useState<string | null>(null)
 
-    const handleEmailChange = (e:any) => {
+    const handleEmailChange = (e: any) => {
         setEmail(e.target.value);
     }
 
-    return(
+    return (
         <div className={styles.singleCard}>
             <div className={styles.cardBackground}>
                 <div className={styles.imageWrapper}>
@@ -45,7 +45,8 @@ const SingleCard = () => {
                                 </h3>
                                 <div className={styles.emailContainer}>
                                     <div className={styles.emailBar}>
-                                        <label htmlFor="emailInputField" className={styles.emailLabel}>
+                                        <label htmlFor="emailInputField" className={`${styles.emailLabel}`}>
+                                        {/*<label htmlFor="emailInputField" className={`${styles.emailLabel}` + (email ? ` ${styles.emailFilledLabel}` : ``)}>*/}
                                             Email address
                                         </label>
                                         <div className={styles.emailInputContainer}>

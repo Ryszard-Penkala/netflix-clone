@@ -8,6 +8,9 @@
   margin: 0 5%;
   position: relative;
   z-index: 1;
+  @media only screen and (min-width: $screen-xl) {
+    margin: 0 10%;
+  }
 }
 
 .logoContainer{
