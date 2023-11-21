@@ -11,11 +11,11 @@ const Button = ({children, type}: Props) => {
             <a href="/signin">
                 {children}
                 {type === 'getStartedButton'
-                    ? (<p className={styles.getStartedArrowContainer}>
+                    ? (<div className={styles.getStartedArrowContainer}>
                         <div className={styles.getStartedArrow}>
 
                         </div>
-                    </p>)
+                    </div>)
                 : ''}
             </a>
         </button>
